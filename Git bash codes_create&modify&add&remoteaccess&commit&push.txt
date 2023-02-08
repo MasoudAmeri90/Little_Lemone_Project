@@ -1,0 +1,189 @@
+
+Ameri.Masoud@LAP00351 MINGW64 /
+$ git init
+Initialized empty Git repository in C:/Users/ameri.masoud/AppData/Local/Programs/Git/.git/
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git add readme.md
+fatal: pathspec 'readme.md' did not match any files
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ Create readme.md
+bash: Create: command not found
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ touch readme.md
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ echo "setting up repository for project" readme.md
+setting up repository for project readme.md
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git add readme.md
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git commit -m "adding project readme"
+[master (root-commit) 670a075] adding project readme
+ Committer: Masoud Ameri <Ameri.Masoud@Group.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git remote add origin <REMOTE_URL>
+bash: syntax error near unexpected token `newline'
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git remote add origin <https://github.com/MasoudAmeri90/db-capstone-project.git>
+bash: syntax error near unexpected token `newline'
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git remote add origin https://github.com/MasoudAmeri90/db-capstone-project.git
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git remote -v
+origin  https://github.com/MasoudAmeri90/db-capstone-project.git (fetch)
+origin  https://github.com/MasoudAmeri90/db-capstone-project.git (push)
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MasoudAmeri90/db-capstone-project.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+----------------------------------------------------------------------------------
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git checkout -B NewBranch
+Switched to a new branch 'NewBranch'
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git add NewBranch
+fatal: pathspec 'NewBranch' did not match any files
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git status
+On branch NewBranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LICENSE.txt
+        ReleaseNotes.html
+        bin/
+        cmd/
+        dev/
+        etc/
+        git-bash.exe
+        git-cmd.exe
+        mingw64/
+        newproject/
+        newprojects/
+        unins000.dat
+        unins000.exe
+        unins000.msg
+        usr/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git commit -m "message"
+On branch NewBranch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        LICENSE.txt
+        ReleaseNotes.html
+        bin/
+        cmd/
+        dev/
+        etc/
+        git-bash.exe
+        git-cmd.exe
+        mingw64/
+        newproject/
+        newprojects/
+        unins000.dat
+        unins000.exe
+        unins000.msg
+        usr/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git push -u origin NewBranch
+To https://github.com/MasoudAmeri90/db-capstone-project.git
+ ! [rejected]        NewBranch -> NewBranch (fetch first)
+error: failed to push some refs to 'https://github.com/MasoudAmeri90/db-capstone-project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git push -u origin NewBranch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'NewBranch' on GitHub by visiting:
+remote:      https://github.com/MasoudAmeri90/db-capstone-project/pull/new/NewBranch
+remote:
+To https://github.com/MasoudAmeri90/db-capstone-project.git
+ * [new branch]      NewBranch -> NewBranch
+branch 'NewBranch' set up to track 'origin/NewBranch'.
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+Ameri.Masoud@LAP00351 MINGW64 / (NewBranch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Ameri.Masoud@LAP00351 MINGW64 / (master)
+$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 393.73 KiB | 111.00 KiB/s, done.
+From https://github.com/MasoudAmeri90/db-capstone-project
+   670a075..fec1a9d  master     -> origin/master
+Updating 670a075..fec1a9d
+Fast-forward
+ LittleLemonDB | Bin 0 -> 3057152 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 LittleLemonDB
